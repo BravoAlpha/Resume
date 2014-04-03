@@ -11,8 +11,8 @@
 #resume h1 { font-size: 30pt; margin-top: 0.5em; float: left; font-weight: normal; }
 #resume h2 { clear: both; font-size: 15pt; margin-top: 0.5em; border-bottom: 4px solid #c0d0e0; padding-bottom: 0.0em; font-variant: small-caps; letter-spacing: 2px; }
 #resume h3 { margin-top: 1em; font-size: 13pt; }
-#resume h4 { font-size: 11pt; margin-top: 1em; float: left; }
-#resume h5 { color: #555555; font-size: 11pt; font-weight: normal; margin-top: 1em; text-align: right; font-style: italic; }
+#resume h4 { font-size: 11pt; margin-top: 0.5em; float: left; }
+#resume h5 { color: #555555; font-size: 11pt; font-weight: normal; margin-top: 0.5em; text-align: right; font-style: italic; }
 #resume h6 { color: #555555; font-size: 11pt; font-weight: normal; margin-top: 0em; text-align: right; font-style: italic; }
 #resume ul, #resume ol { margin-left: 2em; }
 #resume ul ul, #resume ul ol, #resume ol ul, #resume ol ol { margin-top: 0; margin-bottom: 0; }
