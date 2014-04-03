@@ -13,14 +13,6 @@ $border: #E0E0E0;
   padding: 0;
 }
 
-body {
-  color: $fg;
-  line-height: 1.4em;
-  background-color: $bg;
-  font-family: serif;
-  font-size: 0.9em;
-}
-
 /**
  * Fix float problem.
  * http://www.positioniseverything.net/easyclearing.html
@@ -41,52 +33,71 @@ body {
 
 #resume {
   width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  padding: 10px;
+  margin: 50px auto;
+  line-height: 1.4em;
 
   h1, h2, h3, h4, h5, h6 {
     border: 0;
   }
 
   h1 {
-    font-size: 170%;
-    border-top: 4px solid $border;
-    padding-top: 0.5em;
-    margin-top: 1.5em;
-  }
-
-  h1:first-child {
-    margin-top: 30px;
-    padding-top: 0.25em;
-    border-top: none;
-    font-size: 200%;
+    font-size: 30pt;
+    margin-top: 0.5em;
+    float: left;
+    font-weight: normal;
   }
 
   h2 {
-    font-size: 150%;
-    margin-top: 1.5em;
-    border-top: 4px solid $border;
-    padding-top: 0.5em;
+    clear: both;
+    font-size: 15pt;
+    margin-top: 0.5em;
+    border-bottom: 4px solid #c0d0e0;
+    padding-bottom: 0.0em;
+    font-variant: small-caps;
+    letter-spacing: 2px;
   }
 
   h3 {
     margin-top: 1em;
+    font-size: 13pt;
   }
 
-  p {
-     margin: 1em 0;
-     line-height: auto;
+  h4 {
+    font-size: 11pt;
+    margin-top: 1em;
+    float: left;
   }
+
+  h5 {
+    color: #555555;
+    font-size: 11pt;
+    font-weight: normal;
+    margin-top: 1em;
+    text-align: right;
+    font-style: italic;
+  }
+
+  h6 {
+    color: #555555;
+    font-size: 11pt;
+    font-weight: normal;
+    margin-top: 0em;
+    text-align: right;
+    font-style: italic; 
+  }
+
+  // p {
+  //    margin: 1em 0;
+  //    line-height: auto;
+  // }
 
   ul, ol {
-    margin: 1em 0 1em 2em;
+    margin-left: 2em;
 
-    li {
-      margin-top: 0.3em;
-      margin-bottom: 0.3em;
-    }
+    // li {
+    //   margin-top: 0.3em;
+    //   margin-bottom: 0.3em;
+    // }
 
     ul, ol {
       margin-top: 0;

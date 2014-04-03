@@ -1,75 +1,103 @@
 /**
- * Resume print style sheet.
- * Attempts to make the page similar, but better looking on paper.
+ * Less based style sheet.
+ * @author Nat Welch
  */
+
+$fg:     #333333;
+$bg:     #F9F9F9;
+$link:   #4183C4;
+$border: #E0E0E0;
 
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  background: white;
-  color: black;
-  font-family: serif;
+/**
+ * Fix float problem.
+ * http://www.positioniseverything.net/easyclearing.html
+ */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 .download {
-  display: none;
+  margin-top: 100px;
+  display: block;
+  text-align: right;
 }
 
 #resume {
-  font-size: 8pt;
-
-  a, a:visited {
-    color: black;
-    text-decoration: none;
-  }
+  width: 800px;
+  margin: 50px auto;
+  line-height: 1.4em;
 
   h1, h2, h3, h4, h5, h6 {
-    border: 0 !important;
+    border: 0;
   }
 
   h1 {
-    font-size: 170%;
-  }
-
-  h1:first-child {
-    font-size: 210%;
+    font-size: 30pt;
+    margin-top: 0.5em;
+    float: left;
+    font-weight: normal;
   }
 
   h2 {
-    font-size: 150%;
+    clear: both;
+    font-size: 15pt;
+    margin-top: 0.5em;
+    border-bottom: 4px solid #c0d0e0;
+    padding-bottom: 0.0em;
+    font-variant: small-caps;
+    letter-spacing: 2px;
   }
 
   h3 {
-    margin-top: 0.6em;
-    font-size: 130%;
-    margin-bottom: 0;
+    margin-top: 1em;
+    font-size: 13pt;
   }
 
-  p {
-    margin: 0.6em 0;
-    line-height: 1.5em;
+  h4 {
+    font-size: 11pt;
+    margin-top: 1em;
+    float: left;
   }
 
-  blockquote {
-    border: 0 !important;
-    margin: 0.5em 0 !important;
-    padding-left: 0.6em !important;
-
-    p {
-      margin: 0.2em 0;
-    }
+  h5 {
+    color: #555555;
+    font-size: 11pt;
+    font-weight: normal;
+    margin-top: 1em;
+    text-align: right;
+    font-style: italic;
   }
+
+  h6 {
+    color: #555555;
+    font-size: 11pt;
+    font-weight: normal;
+    margin-top: 0em;
+    text-align: right;
+    font-style: italic; 
+  }
+
+  // p {
+  //    margin: 1em 0;
+  //    line-height: auto;
+  // }
 
   ul, ol {
-    margin: 1em 0 1em 2em;
+    margin-left: 2em;
 
-    li {
-      margin-top: .5em;
-      margin-bottom: .5em;
-    }
+    // li {
+    //   margin-top: 0.3em;
+    //   margin-bottom: 0.3em;
+    // }
 
     ul, ol {
       margin-top: 0;
@@ -77,33 +105,19 @@ body {
     }
   }
 
+  blockquote {
+    border-left: 5px solid $border;
+    margin: 1em 0;
+    padding-left: 0.6em;
+  }
+
   a, a:visited {
+    color: $link;
     text-decoration: none;
   }
 
   a:hover {
     text-decoration: underline;
-  }
-
-  pre {
-    margin: 1em 0;
-    font-size: 12px;
-    border: 1px solid #dedede;
-    padding: .5em;
-    line-height: 1.5em;
-    overflow: auto;
-  }
-
-  pre code {
-    padding: 0;
-    font-size: 12px;
-    border: none;
-  }
-
-  code {
-    font-size: 12px;
-    padding: 0 .2em;
-    border: 1px solid #dedede;
   }
 
   img {
@@ -112,8 +126,9 @@ body {
 
   blockquote {
     margin: 1em 0;
-    border-left: 5px solid #ddd;
-    padding-left: .6em;
+    border-left: 5px solid $border;
+    padding-left: 0.6em;
+    color: $fg;
   }
 
   dt {
